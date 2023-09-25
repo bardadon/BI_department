@@ -1,0 +1,13 @@
+[2023-09-23T16:31:09.264+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_data.export_fact_table scheduled__2023-09-23T16:25:00+00:00 [queued]>
+[2023-09-23T16:31:09.270+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_data.export_fact_table scheduled__2023-09-23T16:25:00+00:00 [queued]>
+[2023-09-23T16:31:09.270+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-09-23T16:31:09.280+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): export_fact_table> on 2023-09-23 16:25:00+00:00
+[2023-09-23T16:31:09.285+0000] {standard_task_runner.py:57} INFO - Started process 2892 to run task
+[2023-09-23T16:31:09.290+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_data', 'export_fact_table', 'scheduled__2023-09-23T16:25:00+00:00', '--job-id', '5441', '--raw', '--subdir', 'DAGS_FOLDER/load_data.py', '--cfg-path', '/tmp/tmpjkpe0fj7']
+[2023-09-23T16:31:09.297+0000] {standard_task_runner.py:85} INFO - Job 5441: Subtask export_fact_table
+[2023-09-23T16:31:09.335+0000] {task_command.py:410} INFO - Running <TaskInstance: load_data.export_fact_table scheduled__2023-09-23T16:25:00+00:00 [running]> on host 833e75d2e24d
+[2023-09-23T16:31:09.396+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_data' AIRFLOW_CTX_TASK_ID='export_fact_table' AIRFLOW_CTX_EXECUTION_DATE='2023-09-23T16:25:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-23T16:25:00+00:00'
+[2023-09-23T16:31:14.054+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-09-23T16:31:14.061+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=load_data, task_id=export_fact_table, execution_date=20230923T162500, start_date=20230923T163109, end_date=20230923T163114
+[2023-09-23T16:31:14.078+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-09-23T16:31:14.097+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
