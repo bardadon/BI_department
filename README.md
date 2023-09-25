@@ -1,6 +1,6 @@
 # BI_department
 
-Hello and welcome to my BI department. 
+Welcome to my BI department. 
 The purpose of this department is to support the analytics requirements of a DVD rental company. The BI department currently supports the following features:
 
 ## Features
